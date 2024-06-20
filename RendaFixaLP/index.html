@@ -10,79 +10,41 @@
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-       <a class="navbar-brand" href="Landing-Page/RendaFixaLP/index.html"><img src="Landing-Page/RendaFixaLP/Images/1melhor-capa-canal.jpeg" alt="logo do grupo"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+       <a class="navbar-brand" href="index.html"><img src="/Images/1melhor-capa-canal.jpeg"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Início</a>
+            <a class="nav-link" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="https://www.instagram.com/1melhor._/" target="_blank">Contato</a>
           </li>
         </ul>
       </div>
-
-      <div class="g-signin2" data-onsuccess="onSignIn">
-        <script>
-          function onSuccess(googleUser) {
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-          }
-          function onFailure(error) {
-            console.log(error);
-          }
-          function renderButton() {
-            gapi.signin2.render('my-signin2', {
-              'scope': 'profile email',
-              'width': 240,
-              'height': 50,
-              'longtitle': true,
-              'theme': 'dark',
-              'onsuccess': onSuccess,
-              'onfailure': onFailure
-            });
-          }
-        <a href="#" onclick="signOut();">Sign out</a>
-          function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-              console.log('User signed out.');
-            });
-          }
-        </script>
-      </div>
-
     </nav>
-
   </header>
 
   <main>
-    <section class="jumbotron text-center">
-      <div class="container">
+    <section class="text-center">
+      <div class="container bg-image">
         <h1 class="jumbotron-heading">Mesmo que seja 1%, queremos o seu melhor a cada dia!</h1>
         <p class="lead text-muted">Oferecemos conhecimento para que voce alcance a sua maxima capacidade!.</p>
         <a href="#" class="btn btn-primary my-2">Saiba Mais</a>
       </div>
     </section>
 
-   <section class="jumbotron text-center"> 
+   <section class="jumbotron text-center bg-dark"> 
     <div class="container">
-        <h2>Conheça tambem nossos E-books</h2>
+        <h2>Conheça nossos E-books</h2>
         <div id="productCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card">
-                <img src="RendaFixaLP/Images/" class="card-img-top" alt="capa e-book">
+              <div class="card1 bg-image">
                 <div class="card-body">
                   <h5 class="card-title">Alcance o equilibrio financeiro</h5>
                   <p class="card-text">Oferecemos uma visão totalmente diferente de organizar sua finanças, <strong><i>ajudando voce a obter retornos incriveis!</i></strong></p>
@@ -91,8 +53,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
-                <img src="RendaFixaLP/Images/" class="card-img-top" alt="capa e-book">
+              <div class="card2 bg-image">
                 <div class="card-body">
                   <h5 class="card-title">Torne-se um profissional em Marketing</h5>
                   <p class="card-text">Alcance mais pessoas com as melhores estratégia fornecidas pela nossa equipe!</p>
@@ -101,8 +62,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
-                <img src="RendaFixaLP/Images/" class="card-img-top" alt="capa e-book">
+              <div class="card3 bg-image">
                 <div class="card-body">
                   <h5 class="card-title">Alcance seu melhor Fisico</h5>
                   <p class="card-text">Não se entregue a zona de comforto, <strong>busque sua melhor versão!!</strong></p>
@@ -123,21 +83,15 @@
       </div>
     </div>
    </section> 
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Nosso E-Book</h2>
-          <p>Conheça os nosso e-book e como podemos ajudar-lo a melhorar suas finanças.</p>
-          <a href="#" class="btn btn-secondary">Saiba Mais</a>
-        </div>
   </main>
 
   <footer class="footer">
+    <section class="jumbotron text-center bg-dark"> 
     <div class="container">
       <a href="https://www.instagram.com/1melhor._/" target="_blank"><b>@1melhor._</b><br/>Conheça nossas redes sociais!</a>
       <span class="text-muted">&copy; 2024 1% Melhor. Todos os direitos reservados.</span>
     </div>
+    </section>
   </footer>
   
   <script src="RendaFixaLP/JS/index.js"></script>

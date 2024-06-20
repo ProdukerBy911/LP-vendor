@@ -1,8 +1,54 @@
+body {
+
+  color: #ffffff;
+  
+  a {
+    color: #0634bd;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: rgb(58, 5, 129);
+    text-decoration: underline;
+  }
+}
+
+main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner bg-image{
+  background-image: url(/Images/Banner-canal.png);
+  background-position: center;
+  backface-visibility: initial;
+}
+
+
 .jumpbotron text-center{
   background-image: url('RendaFixaLP/images/Banner-canal.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+  backface-visibility: initial;
   padding: 50px;
+}
+
+.card1 bg-image{
+  background-image: url('RendaFixaLP/images/Cofrinho.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 bg-image{
+  background-image: url('RendaFixaLP/images/Progresso.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 bg-image{
+  background-image: url('RendaFixaLP/images/Salto.png');
+  background-size: cover;
+  background-position: center;
 }
