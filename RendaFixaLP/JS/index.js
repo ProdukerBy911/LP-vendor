@@ -1,9 +1,14 @@
- // JavaScript for form submission
- const form = document.getElementById('checkout-form');
+// server.mjs
+import { createServer } from 'node:http';
 
- form.addEventListener('submit', (event) => {
-   event.preventDefault();
+const server = createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World!\n');
+});
 
-   // Aqui você pode adicionar a lógica para processar o pagamento
-   console.log('Formulário enviado!');
- });
+// starts a simple http server locally on port 3000
+server.listen(3000, '127.0.0.1', () => {
+  console.log('Listening on 127.0.0.1:3000');
+});
+
+// run with `node server.mjs`
